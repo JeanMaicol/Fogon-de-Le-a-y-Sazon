@@ -8,7 +8,7 @@
     body {
       margin: 0;
       font-family: Arial, sans-serif;
-      background: url('portada.png') no-repeat center center/contain;
+      background: url('portada.png') no-repeat center center/cover;
       background-color: #000; /* relleno negro de fondo */
       color: #fff;
       text-align: center;
@@ -17,6 +17,7 @@
       flex-direction: column;
       justify-content: center;
       background-attachment: fixed;
+      position: relative;
     }
     .overlay {
       background-color: rgba(0,0,0,0.6);
@@ -38,12 +39,13 @@
       font-size: 1.2em;
       text-decoration: none;
       color: #fff;
-      background: #d35400;
+      background: #6b3e26; /* marrón oscuro */
       border-radius: 8px;
-      transition: background 0.3s;
+      transition: background 0.3s, transform 0.2s;
     }
     .buttons a:hover {
-      background: #e67e22;
+      background: #8e5a35; /* marrón más claro al pasar */
+      transform: scale(1.05);
     }
   </style>
 </head>
