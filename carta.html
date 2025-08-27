@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Carta - Fogón de Leña y Sazón</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Arial', sans-serif;
+      background: url('fondocarta.png') no-repeat center center fixed;
+      background-size: cover;
+      color: #fff;
+      text-align: center;
+      padding: 40px 20px;
+    }
+
+    .overlay {
+      background-color: rgba(0, 0, 0, 0.6);
+      position: fixed;
+      top: 0; left: 0; right: 0; bottom: 0;
+      z-index: -1;
+    }
+
+    h1 {
+      font-size: 2.5em;
+      margin-bottom: 20px;
+      text-shadow: 2px 2px 5px #000;
+    }
+
+    .menu-section {
+      margin-bottom: 40px;
+      background-color: rgba(255, 255, 255, 0.1);
+      padding: 20px;
+      border-radius: 12px;
+    }
+
+    .menu-section h2 {
+      font-size: 2em;
+      color: #ffcc80;
+      margin-bottom: 15px;
+      text-shadow: 1px 1px 3px #000;
+    }
+
+    ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    li {
+      font-size: 1.2em;
+      margin: 10px 0;
+      display: flex;
+      justify-content: space-between;
+      padding: 8px 15px;
+      background-color: rgba(0,0,0,0.4);
+      border-radius: 8px;
+    }
+
+    .price {
+      font-weight: bold;
+      color: #ffd54f;
+    }
+
+    .back-btn {
+      display: inline-block;
+      margin-top: 30px;
+      padding: 12px 24px;
+      font-size: 1.2em;
+      text-decoration: none;
+      color: #fff;
+      background-color: #4e342e;
+      border-radius: 8px;
+      transition: background-color 0.3s, transform 0.2s;
+    }
+    .back-btn:hover {
+      background-color: #6d4c41;
+      transform: scale(1.05);
+    }
+  </style>
+</head>
+<body>
+  <div class="overlay"></div>
+
+  <h1>🍴 Nuestra Carta</h1>
+
+  <div class="menu-section">
+    <h2>Desayunos</h2>
+    <ul>
+      <li>Caldo de costilla <span class="price">$8.000</span></li>
+      <li>Huevos al gusto <span class="price">$6.000</span></li>
+      <li>Tamal nariñense <span class="price">$10.000</span></li>
+    </ul>
+  </div>
+
+  <div class="menu-section">
+    <h2>Almuerzos</h2>
+    <ul>
+      <li>Bandeja paisa <span class="price">$18.000</span></li>
+      <li>Pechuga a la plancha <span class="price">$15.000</span></li>
+      <li>Sopa del día <span class="price">$7.000</span></li>
+    </ul>
+  </div>
+
+  <div class="menu-section">
+    <h2>Especialidades</h2>
+    <ul>
+      <li>Cazuela de mariscos <span class="price">$25.000</span></li>
+      <li>Trucha al ajillo <span class="price">$22.000</span></li>
+    </ul>
+  </div>
+
+  <div class="menu-section">
+    <h2>Bebidas</h2>
+    <ul>
+      <li>Jugo natural <span class="price">$5.000</span></li>
+      <li>Gaseosa <span class="price">$4.000</span></li>
+      <li>Cerveza <span class="price">$7.000</span></li>
+    </ul>
+  </div>
+
+  <a href="index.html" class="back-btn">⬅ Volver a la Portada</a>
+</body>
+</html>
